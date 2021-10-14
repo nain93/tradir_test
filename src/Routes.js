@@ -5,6 +5,8 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
+import BeerCart from "./Pages/BeerCart";
+import BeerList from "./Pages/BeerList";
 import Home from "./Pages/Home";
 // import ReactGA from "react-ga";
 
@@ -14,6 +16,8 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" render={() => <Redirect to="/home" />} />
         <Route path="/home" component={Home} />
+        <Route path="/beerlist" component={BeerList} />
+        <Route path="/beercart" component={BeerCart} />
       </Switch>
     </Router>
   );
